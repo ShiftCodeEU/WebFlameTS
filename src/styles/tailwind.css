@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@font-face {
+  font-family: "JetBrainsMono Nerd Font";
+  src: local("JetBrainsMono Nerd Font"),
+    url("/fonts/JetBrainsMonoNerdFontMono-Bold.ttf"),
+    url("/fonts/JetBrainsMonoNerdFontMono-BoldItalic.ttf") format("truetype"),
+    url("/fonts/JetBrainsMonoNerdFontMono-ExtraBold.ttf") format("truetype"),
+    url("/fonts/JetBrainsMonoNerdFontMono-ExtraBoldItalic.ttf")
+      format("truetype"),
+    url("/fonts/JetBrainsMonoNerdFontMono-ExtraLight.ttf") format("truetype"),
+    url("/fonts/JetBrainsMonoNerdFontMono-ExtraLightItalic.ttf")
+      format("truetype"),
+    url("/fonts/JetBrainsMonoNerdFontMono-Italic.ttf") format("truetype"),
+    url("/fonts/JetBrainsMonoNerdFontMono-Light.ttf") format("truetype"),
+    url("/fonts/JetBrainsMonoNerdFontMono-LightItalic.ttf") format("truetype"),
+    url("/fonts/JetBrainsMonoNerdFontMono-Medium.ttf") format("truetype"),
+    url("/fonts/JetBrainsMonoNerdFontMono-MediumItalic.ttf") format("truetype"),
+    url("/fonts/JetBrainsMonoNerdFontMono-Regular.ttf") format("truetype"),
+    url("/fonts/JetBrainsMonoNerdFontMono-SemiBold.ttf") format("truetype"),
+    url("/fonts/JetBrainsMonoNerdFontMono-SemiBoldItalic.ttf")
+      format("truetype"),
+    url("/fonts/JetBrainsMonoNerdFontMono-Thin.ttf") format("truetype"),
+    url("/fonts/JetBrainsMonoNerdFontMono-ThinItalic.ttf") format("truetype");
+}
+
+@layer base {
+  :root {
+    --font-jetbrains-nerd: "JetBrainsMono Nerd Font";
+    font-family: var(--font-jetbrains-nerd);
+  }
+}
+
+:root {
+  @apply h-screen overflow-hidden bg-gradient-to-b from-gray-700 via-gray-900 to-black bg-contain font-JetBrainsMonoNerd text-white;
+}
+
+body {
+  @apply fixed inset-0 overflow-y-scroll;
+}
+
+/* Custom Scrollbar */
+
+/* Width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-base-100;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-base-300;
+}

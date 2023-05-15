@@ -1,0 +1,9 @@
+# Cache etc (if used)
+.vercel
+
+# NodeJS
+node_modules
+
+# Build outputs
+dist
+out

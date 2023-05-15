@@ -1,0 +1,43 @@
+{
+  "name": "web_flame-ts",
+  "version": "1.0.0",
+  "description": "Simple, stupid fast and light weight SPA app starter.",
+  "private": true,
+  "keywords": [
+    "inferno",
+    "infernojs",
+    "vite",
+    "inferno-boilerplate",
+    "vite-boilerplate",
+    "vite-starter",
+    "vite-template"
+  ],
+  "author": "JesseKoldewijn",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite --port 3000",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "inferno": "^8.1.1",
+    "inferno-clone-vnode": "^8.1.1",
+    "inferno-compat": "^8.1.1",
+    "inferno-create-class": "^8.1.1",
+    "inferno-create-element": "^8.1.1",
+    "inferno-router": "^8.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.1.4",
+    "autoprefixer": "^10.4.14",
+    "daisyui": "^2.51.6",
+    "postcss": "^8.4.23",
+    "postcss-import": "^15.1.0",
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.2.8",
+    "tailwindcss": "^3.3.2",
+    "vite": "^4.3.5",
+    "vite-plugin-inferno": "^0.0.1",
+    "vite-tsconfig-paths": "^4.2.0"
+  }
+}
