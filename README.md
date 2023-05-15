@@ -16,6 +16,8 @@ pnpm install
 
 ## Usage
 
+> The router is still WIP, for now you'll have to write out all the routes yourself.
+
 ```sh
 pnpm run dev
 ```
